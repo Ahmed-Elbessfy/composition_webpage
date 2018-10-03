@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    @include prefixer(box-sizing, border-box, webkit moz o ms);
+}
+
+.content {
+    width: 95%;
+    max-width: 90rem;
+    margin: auto;
+
+    @media #{$xs_media} {
+        width: 80%;
+    }
+}

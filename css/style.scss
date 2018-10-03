@@ -1,0 +1,34 @@
+// // general file rules
+// @import "_general";
+
+// //project file rules
+// @mixin gridDim ($min, $max, $gab) {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax($min, $max));
+//     grid-gap: $gab;
+// }
+
+// $main-cl: #fff;
+// $main-bg: #303030;
+// $sec-cl: #76c38f;
+
+
+//used for importing all saas files of the project
+//import variables and mixins first 
+@import 'saas/helpers/_variables';
+@import 'saas/helpers/_mixins';
+@import 'saas/layout/grid';
+@import 'saas/pages/general';
+
+
+
+//import pages contents (( layout ))
+@import 'saas/pages/home';
+@import 'saas/layout/header';
+@import 'saas/layout/footer';
+
+
+//import components
+@import 'saas/components/headings';
+@import 'saas/components/nav';
+@import "saas/components/_buttons";

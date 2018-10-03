@@ -1,0 +1,31 @@
+//Right to Left rules
+
+@import 'saas/helpers/_variables';
+@import 'saas/helpers/_mixins';
+
+main {
+    .services {
+        .serv_container {
+            .service {
+                @include prefixer(box-shadow, -3px 3px 5px $fade_cl, webkit moz o ms);
+            }
+        }
+    }
+
+    .team {
+        .team_container {
+            .member {
+                @include prefixer(box-shadow, -3px 3px 5px $fade_cl, webkit moz o ms);
+                padding-left: 0.2rem;
+            }
+        }
+    }
+}
+
+footer {
+    &>.content {
+        &>* {
+            @include prefixer(box-shadow, -3px 3px 5px $sec_cl, webkit moz o ms);
+        }
+    }
+}

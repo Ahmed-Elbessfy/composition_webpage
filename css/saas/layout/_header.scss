@@ -1,0 +1,48 @@
+header {
+    border-bottom: 1px solid $fade_cl;
+    padding: 2rem 0;
+
+    .content {
+        display: grid;
+        grid-template-columns: auto 4rem;
+
+        @media #{$xs_media} {
+            @include gridDim(27rem, 1fr, 1rem);
+        }
+
+        @media #{$sm_media} {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        .logo {
+            color: $sec-cl;
+
+            @media #{$xs_media} {
+                text-align: center;
+            }
+
+            @media #{$sm_media} {
+                text-align: left;
+            }
+
+            h1 {
+                text-transform: uppercase;
+            }
+
+            p {
+                text-transform: capitalize;
+                font-size: 1.2rem;
+            }
+        }
+
+        .toggler {
+
+            @media #{$xs_media} {
+                display: none;
+            }
+        }
+
+
+    }
+}

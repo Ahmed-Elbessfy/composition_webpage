@@ -1,0 +1,144 @@
+footer {
+    background-color: $fade_cl;
+    color: $sec-cl;
+    padding: 2rem 0;
+
+
+    h3 {
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+    }
+
+    &>.content {
+        &>* {
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            @include prefixer(box-shadow, 3px 3px 5px $sec_cl, webkit moz o ms);
+        }
+
+
+        @media #{$xs-media} {
+            @include gridDim(20.3rem, 1fr, 1.5rem);
+        }
+
+        .blog {
+            grid-column: 1/-1;
+
+            @media #{$md_media} {
+                grid-column: auto;
+            }
+
+            h3 {
+                grid-column: 1/-1;
+            }
+
+            .post {
+                display: grid;
+                grid-template-columns: 110px auto;
+                margin: 0.8rem 0.3rem;
+                grid-gap: 0.5rem;
+
+                .image {
+                    border: 1px solid $sec_cl;
+                    padding: 5px;
+                    height: 110px;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                .post_content {
+                    h4 {
+                        text-transform: capitalize;
+                        margin-bottom: 0.35rem;
+                        color: $main_cl;
+                    }
+
+                    p {
+                        max-width: 17rem;
+                    }
+                }
+            }
+        }
+
+        .details {
+            line-height: 1.2;
+
+            &>div {
+                text-transform: capitalize;
+                margin: 0.8rem 0;
+            }
+
+            p {
+                span {
+                    color: $main_cl;
+                }
+            }
+        }
+
+        .contact_us {
+
+            form {
+
+                input,
+                textarea {
+                    width: 100%;
+                    margin: 0.25rem 0;
+                    border-radius: 0.4rem;
+                    padding: 0.4rem;
+                }
+
+                textarea {
+                    height: 6rem;
+                }
+
+                button {
+                    background-color: $main_cl;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    border-radius: 0.4rem;
+                    letter-spacing: 0.6px;
+                    font-family: "josefin slab";
+                    @include prefixer (transition, (background-color 0.4s ease-in, color 0.4s ease-in));
+
+                    &:hover {
+                        color: $main_cl;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 2rem;
+        color: $main_cl;
+        font-weight: bold;
+        text-align: center;
+
+        .content {
+            &>* {
+                padding: 0.5rem;
+                margin-top: 0.3rem;
+                margin-bottom: 0.3rem;
+            }
+
+            border-top: 1px solid #afafaf;
+            @include gridDim(19.7rem, 1fr, 0);
+
+            .text {
+                @media #{$xs_media} {
+                    justify-self: start;
+                }
+            }
+
+            .author {
+                @media #{$xs_media} {
+                    justify-self: end;
+                }
+            }
+        }
+    }
+}

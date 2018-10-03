@@ -1,0 +1,62 @@
+p {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+a {
+  font-size: 0.9rem;
+}
+
+input {
+  font-size: 0.9rem;
+}
+
+textarea {
+  font-size: 0.9rem;
+}
+
+main .services .serv_container .service {
+  -webkit-box-shadow: -3px 3px 5px #ccc;
+  -o-box-shadow: -3px 3px 5px #ccc;
+  -ms-box-shadow: -3px 3px 5px #ccc;
+  box-shadow: -3px 3px 5px #ccc;
+}
+
+main .team .team_container .member {
+  -webkit-box-shadow: -3px 3px 5px #ccc;
+  -o-box-shadow: -3px 3px 5px #ccc;
+  -ms-box-shadow: -3px 3px 5px #ccc;
+  box-shadow: -3px 3px 5px #ccc;
+  padding-left: 0.2rem;
+}
+
+footer > .content > * {
+  -webkit-box-shadow: -3px 3px 5px #4e4e4e;
+  -o-box-shadow: -3px 3px 5px #4e4e4e;
+  -ms-box-shadow: -3px 3px 5px #4e4e4e;
+  box-shadow: -3px 3px 5px #4e4e4e;
+}
+/*# sourceMappingURL=style_rtl.css.map */

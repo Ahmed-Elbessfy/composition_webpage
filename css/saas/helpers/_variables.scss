@@ -1,0 +1,28 @@
+//Media sizes and Queries 
+$xs_size : 768px;
+$sm_size : 992px;
+$md_size : 1200px;
+$xs_media : (min-width : $xs_size);
+$sm_media : (min-width : $sm_size);
+$md_media : (min-width : $md_size);
+
+$basic_fz : 15px;
+
+//colors
+$main_cl: #e2494c;
+$sec_cl: #4e4e4e;
+$fade_cl: #ccc;
+
+//font families
+$main-ff: "Raleway"; //paragraphs and most of elements
+$headers-ff: "josefin slab"; //headers
+
+//setting font-size for all elements
+$font-sizes : (p:1, h1:2.6, h2:2.2, h3:2, h4:1.7, h5:1.5, h6:1.2, a:0.9, input:0.9, textarea:0.9);
+
+@each $item,
+$fz in $font-sizes {
+    #{$item} {
+        font-size: #{$fz}rem;
+    }
+}

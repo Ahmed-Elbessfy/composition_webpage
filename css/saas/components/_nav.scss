@@ -1,0 +1,35 @@
+nav {
+    background: $main_cl;
+    border-radius: 1rem;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+    grid-column: 1/-1;
+
+    @media #{$xs_media} {
+        grid-column: auto;
+    }
+
+    ul {
+        display: none;
+
+        @media #{$xs_media} {
+            @include gridDim(5rem, 1fr, 0.3rem);
+            width: auto;
+        }
+
+        li {
+            a {
+                display: block;
+                padding: 1rem 0;
+                line-height: 29px;
+                color: #fff;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: $fade_cl;
+                }
+            }
+        }
+    }
+}
